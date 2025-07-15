@@ -20,4 +20,9 @@ public class LoadSkin : MonoBehaviour
     {
         Time.timeScale = 1;
     }
+    public void RestartGame()
+    {
+        Time.timeScale = 1f;
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
 }
